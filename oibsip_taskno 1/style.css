@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3B4664;
+}
+
+.calc {
+  color: white;
+  font-size: 2rem;
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.container {
+  height: 600px;
+  width: 400px;
+}
+
+.outerCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  width: 100%;
+  background-color: #181F32;
+  box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+  height: 180px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.outerCont .display {
+  word-wrap: break-word;
+  text-align: end;
+  font-size: 1.5rem;
+}
+.outerCont .answer-container .answer {
+  bottom: 0;
+  background-color: #1f2a47;
+  word-wrap: break-word;
+  font-size: 2rem;
+  text-align: end;
+}
+
+.calcInpVals {
+  background-color: #181F32;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.calcInpVals .buttons {
+  cursor: pointer;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3B4664;
+  background-color: rgb(255, 255, 255);
+  height: 60px;
+  text-align: center;
+  border-radius: 10px;
+}
+.calcInpVals .but {
+  background-color: orange;
+}
+
+.footer-c {
+  margin-top: 40px;
+  color: rgb(110, 110, 110);
+  font-size: 0.7rem;
+}
+
+@media (max-width: 415px) {
+  body {
+    background-color: #3B4664;
+    height: 100vh;
+  }
+  .container {
+    padding: 0 1%;
+    width: 90%;
+  }
+  .calc {
+    margin-bottom: 0;
+    padding: 0 0 0 6%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
