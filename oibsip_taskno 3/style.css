@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: lightsteelblue;
+}
+
+.container {
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 5px;
+  width: 700px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 180px;
+}
+
+.todo {
+  color: rgb(68, 88, 94);
+}
+
+.inputdiv-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputdiv-container #button {
+  cursor: pointer;
+  border-radius: 8px;
+  height: 40px;
+  width: 62px;
+  font-size: 1.2rem;
+  background-color: lightseagreen;
+  border: 0;
+  color: white;
+}
+
+.inputdiv-container #input {
+  outline: none;
+  font-size: 1.2rem;
+  padding: 20px;
+  border-radius: 8px;
+  height: 40px;
+  width: 100%;
+  margin-right: 15px;
+  border: 1.4px solid rgb(190, 190, 190);
+}
+
+li {
+  list-style: none;
+  width: 550px;
+}
+
+.parentElem li {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.inner-div {
+  display: flex;
+  overflow-wrap: break-word;
+  border-radius: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  background-color: rgb(235, 235, 235);
+  word-break: break-all;
+}
+.inner-div .delete {
+  padding: 10px;
+  overflow: hidden;
+  width: 55px;
+  font-size: 1.2rem;
+  height: 40px;
+
+  background-image: linear-gradient(45deg, rgb(248, 153, 75), rgb(255, 0, 0));
+  color: white;
+  border: none;
+
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  cursor: pointer;
+}
+.inner-div .checkbox {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border: 0;
+}
+
+.show {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tasksCounterPara {
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    margin-top: 90px;
+  }
+  .inputdiv-container {
+    display: block;
+  }
+  .inputdiv-container #button {
+    margin-top: 10px;
+    width: 100%;
+  }
+  li {
+    width: 70%;
+    margin: 0 5px;
+    font-size: 1rem;
+  }
+  .inner-div .delete {
+    font-size: 1rem;
+  }
+}
